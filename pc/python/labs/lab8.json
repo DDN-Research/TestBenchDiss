@@ -1,0 +1,45 @@
+{
+ "id": "lab8",
+ "title": {
+  "uk": "ЛР 8. Діагностика несправностей і безпечний стан",
+  "en": "Lab 8. Fault diagnosis and safe state"
+ },
+ "aim": {
+  "uk": "Мета: за кодами помилок і журналом визначити несправність, внесену викладачем.",
+  "en": "Aim: find the fault introduced by the teacher using error codes and the log."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Викладач вмикає одну з несправностей на вкладці «Несправності» (не повідомляючи яку).",
+    "en": "The teacher enables a fault on the Faults tab (without telling which)."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "За словом помилок, журналом подій і показами визначте несправний вузол. Запишіть хід міркувань.",
+    "en": "Using the error word, event log and readings, find the faulty unit. Write down your reasoning."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Натисніть «СТОП» і перевірте, що всі виходи вимкнено (безпечний стан).",
+    "en": "Press STOP and check that all outputs are off (safe state)."
+   },
+   "cmd": [
+    "STOP"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Поверніть режим АВТО після усунення несправності.",
+    "en": "Return to AUTO after the fault is removed."
+   },
+   "cmd": [
+    "MODE AUTO"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "lab3",
+ "title": {
+  "uk": "ЛР 3. Аналогові датчики, АЦП і калібрування",
+  "en": "Lab 3. Analog sensors, ADC and calibration"
+ },
+ "aim": {
+  "uk": "Мета: розрахувати вхідне коло і виконати двоточкове калібрування датчика вологості ґрунту.",
+  "en": "Aim: calculate the input circuit and perform a two-point calibration of the soil sensor."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Розрахуйте Kд = (18 + 6,8) / 6,8 і ціну розряду MCP3208 (Uоп = 2,495 В, 12 біт).",
+    "en": "Calculate Kd = (18 + 6.8)/6.8 and the MCP3208 LSB (Vref 2.495 V, 12 bit)."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Помістіть датчик W1 у сухий ґрунт, дочекайтеся стабілізації A1 і виконайте калібрування.",
+    "en": "Put W1 into dry soil, wait for A1 to settle and calibrate."
+   },
+   "cmd": [
+    "CAL W1 DRY"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Помістіть датчик у ґрунт, насичений водою, і виконайте калібрування.",
+    "en": "Put the sensor into saturated soil and calibrate."
+   },
+   "cmd": [
+    "CAL W1 WET"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Збережіть параметри і перевірте показ W1 у проміжному стані.",
+    "en": "Save the parameters and check W1 at an intermediate state."
+   },
+   "cmd": [
+    "SAVE"
+   ]
+  }
+ ]
+}

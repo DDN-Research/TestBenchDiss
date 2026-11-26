@@ -1,0 +1,58 @@
+{
+ "id": "lab7",
+ "title": {
+  "uk": "ЛР 7. Мережевий обмін RS-485 (протокол D2417/2)",
+  "en": "Lab 7. RS-485 network exchange (D2417/2)"
+ },
+ "aim": {
+  "uk": "Мета: проаналізувати кадри протоколу і реакцію на відсутність відповіді вузла.",
+  "en": "Aim: analyse protocol frames and the reaction to a missing answer."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Увімкніть опитування двох вузлів і монітор RS-485.",
+    "en": "Enable polling of two nodes and the RS-485 monitor."
+   },
+   "cmd": [
+    "SET RS485_NODES 2",
+    "MON 485 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Розберіть кадр запиту і відповіді: стартовий байт, мережа 14h, адреса, довжина, ID, тіло, контрольний байт (XOR).",
+    "en": "Parse request and answer: start byte, network 14h, address, length, ID, body, control byte (XOR)."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Перегляньте стан вузлів.",
+    "en": "Check the nodes."
+   },
+   "cmd": [
+    "NODES"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Імітуйте відсутність відповідей і знайдіть біт 00000010h у слові помилок.",
+    "en": "Simulate missing answers and find bit 00000010h in the error word."
+   },
+   "cmd": [
+    "FAULT RS485 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Скасуйте імітацію і вимкніть монітор.",
+    "en": "Cancel the simulation and disable the monitor."
+   },
+   "cmd": [
+    "FAULT RS485 0",
+    "MON 485 0"
+   ]
+  }
+ ]
+}

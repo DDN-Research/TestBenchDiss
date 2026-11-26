@@ -1,0 +1,43 @@
+{
+ "id": "lab1",
+ "title": {
+  "uk": "ЛР 1. Структура АСК і будова стенда",
+  "en": "Lab 1. ACS structure and the stand"
+ },
+ "aim": {
+  "uk": "Мета: визначити ланки АСК на стенді, скласти перелік входів і виходів.",
+  "en": "Aim: identify the ACS elements of the stand and list its inputs and outputs."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Вивчіть структурну схему стенда. Знайдіть на платах STM32H723, STM32F030, MCP3208, 74AHC595, реле K1–K5.",
+    "en": "Study the block diagram. Find STM32H723, STM32F030, MCP3208, 74AHC595, relays K1–K5."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Натисніть «Підключити». Перегляньте вкладку «Моніторинг»: які величини вимірює стенд?",
+    "en": "Press Connect. Look at Monitoring: which quantities are measured?"
+   },
+   "cmd": [
+    "INFO"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Заповніть у звіті таблицю «вхід – датчик – інтерфейс» і «вихід – виконавчий пристрій».",
+    "en": "Fill in the tables 'input – sensor – interface' and 'output – actuator'."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Накресліть функціональну схему контуру «T1 – контролер – K1 – камера».",
+    "en": "Draw the loop 'T1 – controller – K1 – chamber'."
+   },
+   "cmd": []
+  }
+ ]
+}

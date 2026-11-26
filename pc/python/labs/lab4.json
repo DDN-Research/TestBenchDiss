@@ -1,0 +1,52 @@
+{
+ "id": "lab4",
+ "title": {
+  "uk": "ЛР 4. Двопозиційне регулювання температури з гістерезисом",
+  "en": "Lab 4. On-off temperature control with hysteresis"
+ },
+ "aim": {
+  "uk": "Мета: налаштувати двопозиційний регулятор і оцінити вплив гістерезису.",
+  "en": "Aim: tune an on-off controller and evaluate the effect of hysteresis."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Сформулюйте прогноз: як зміниться розмах коливань і кількість перемикань K1 при збільшенні гістерезису?",
+    "en": "Predict: how will the swing and the number of K1 switchings change with a wider hysteresis?"
+   },
+   "cmd": [
+    "MODE AUTO",
+    "SET HEAT_EN 2",
+    "SET VEN_EN 0"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Дослід 1: гістерезис 1 °C. Запишіть графік 5 хв.",
+    "en": "Run 1: hysteresis 1 °C. Record 5 min."
+   },
+   "cmd": [
+    "SET HEAT_TSET 26",
+    "SET HEAT_HYST 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Дослід 2: гістерезис 3 °C. Запишіть графік 5 хв.",
+    "en": "Run 2: hysteresis 3 °C. Record 5 min."
+   },
+   "cmd": [
+    "SET HEAT_HYST 3"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Порівняйте результати з прогнозом, поясніть перерегулювання (інерційність камери).",
+    "en": "Compare with the prediction, explain the overshoot (chamber inertia)."
+   },
+   "cmd": [
+    "SET VEN_EN 3"
+   ]
+  }
+ ]
+}

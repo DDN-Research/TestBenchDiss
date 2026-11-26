@@ -1,0 +1,43 @@
+{
+ "id": "lab9",
+ "title": {
+  "uk": "Міні-проєкт «Мікроклімат теплиці»",
+  "en": "Mini-project 'Greenhouse microclimate'"
+ },
+ "aim": {
+  "uk": "Мета: налаштувати комплексне керування і обґрунтувати параметри за журналом вимірювань.",
+  "en": "Aim: tune complex control and justify parameters using the measurement log."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Отримайте умову (культура, діапазони T і RH, фотоперіод). Визначте параметри.",
+    "en": "Get the task (crop, T and RH ranges, photoperiod). Choose parameters."
+   },
+   "cmd": [
+    "MODE AUTO"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Запишіть параметри командою SET (вкладка «Параметри») і збережіть.",
+    "en": "Write parameters (Parameters tab) and save."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Ведіть запис CSV не менше 20 хв. Оцініть відхилення від заданих значень.",
+    "en": "Record CSV for at least 20 min. Evaluate the deviations."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Підготуйте висновки і презентацію.",
+    "en": "Prepare conclusions and a presentation."
+   },
+   "cmd": []
+  }
+ ]
+}

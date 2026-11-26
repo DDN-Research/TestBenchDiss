@@ -1,0 +1,51 @@
+{
+ "id": "lab6",
+ "title": {
+  "uk": "ЛР 6. Автоматичний полив із блокуванням за рівнем води",
+  "en": "Lab 6. Automatic watering with water-level interlock"
+ },
+ "aim": {
+  "uk": "Мета: налаштувати полив за вологістю ґрунту і перевірити захисне блокування.",
+  "en": "Aim: set watering by soil moisture and check the interlock."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Установіть пороги поливу.",
+    "en": "Set watering thresholds."
+   },
+   "cmd": [
+    "MODE AUTO",
+    "SET WAT_EN 2",
+    "SET WAT_HUM_S 40",
+    "SET WAT_HUM_E 60",
+    "SET WAT_TMAX 20"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Спостерігайте цикл «полив – пауза» (WAT = 1 / 2) і зміну W1, W2.",
+    "en": "Observe the cycle 'watering – pause' (WAT = 1 / 2) and W1, W2."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Імітуйте відсутність води в баці. Що відбувається з насосом K2?",
+    "en": "Simulate an empty tank. What happens with pump K2?"
+   },
+   "cmd": [
+    "FAULT TANK 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Скасуйте імітацію.",
+    "en": "Cancel the simulation."
+   },
+   "cmd": [
+    "FAULT TANK 0"
+   ]
+  }
+ ]
+}

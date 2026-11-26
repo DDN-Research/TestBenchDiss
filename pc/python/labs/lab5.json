@@ -1,0 +1,41 @@
+{
+ "id": "lab5",
+ "title": {
+  "uk": "ЛР 5. Пропорційне керування вентиляцією (ШІМ)",
+  "en": "Lab 5. Proportional fan control (PWM)"
+ },
+ "aim": {
+  "uk": "Мета: дослідити залежність шпаруватості ШІМ від відхилення температури.",
+  "en": "Aim: study PWM duty versus temperature deviation."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Установіть режим вентиляції за температурою.",
+    "en": "Set ventilation by temperature."
+   },
+   "cmd": [
+    "MODE AUTO",
+    "SET VEN_EN 3",
+    "SET VEN_TMP 25",
+    "SET VEN_BAND 5"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Фіксуйте T1 і PW1 кожні 30 с, побудуйте залежність PW1(T1 − VEN_TMP).",
+    "en": "Record T1 and PW1 every 30 s, plot PW1(T1 − VEN_TMP)."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Змініть VEN_BAND на 2 і повторіть. Як змінився нахил характеристики?",
+    "en": "Change VEN_BAND to 2 and repeat. How did the slope change?"
+   },
+   "cmd": [
+    "SET VEN_BAND 2"
+   ]
+  }
+ ]
+}

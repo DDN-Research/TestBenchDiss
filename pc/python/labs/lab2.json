@@ -1,0 +1,48 @@
+{
+ "id": "lab2",
+ "title": {
+  "uk": "ЛР 2. Цифрові датчики температури та інтерфейс 1-Wire",
+  "en": "Lab 2. Digital temperature sensors and 1-Wire"
+ },
+ "aim": {
+  "uk": "Мета: дослідити обмін з DS18B20 і реакцію системи на несправність лінії.",
+  "en": "Aim: study DS18B20 data exchange and the reaction to a line failure."
+ },
+ "steps": [
+  {
+   "text": {
+    "uk": "Увімкніть монітор SPI і спостерігайте кадри M8SPI між STM32H723 і STM32F030.",
+    "en": "Enable the SPI monitor and watch M8SPI frames between STM32H723 and STM32F030."
+   },
+   "cmd": [
+    "MON SPI 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Розшифруйте значення T1 з кадру відповіді режиму 02h (старший і молодший байти, десяті частки °C).",
+    "en": "Decode T1 from the mode 02h answer (high/low byte, tenths of °C)."
+   },
+   "cmd": []
+  },
+  {
+   "text": {
+    "uk": "Вимкніть монітор. Імітуйте обрив датчика T1 і зафіксуйте реакцію (слово помилок, стан K1).",
+    "en": "Disable the monitor. Simulate an open T1 sensor and record the reaction (error word, K1)."
+   },
+   "cmd": [
+    "MON SPI 0",
+    "FAULT T1 1"
+   ]
+  },
+  {
+   "text": {
+    "uk": "Поверніть датчик і поясніть, чому нагрівач було вимкнено.",
+    "en": "Restore the sensor and explain why the heater was switched off."
+   },
+   "cmd": [
+    "FAULT T1 0"
+   ]
+  }
+ ]
+}
